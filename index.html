@@ -34,11 +34,15 @@
 					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; 2025 </li><li>Credits: <a href="http://html5up.net">H</a></li>
+					<li>&copy; <span id="current-year"></span> </li><li>Credits: <a href="http://html5up.net">H</a></li>
 				</ul>
 			</footer>
 
 		<!-- Scripts -->
+			<script>
+				// current year script
+				document.getElementById("current-year").textContent = new Date().getFullYear();
+			</script>
 			<script src="assets/js/main.js"></script>
 
 	</body>
